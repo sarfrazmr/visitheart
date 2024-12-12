@@ -1,19 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<style>
-		*{
-			padding:0px;
-			margin:0px;
-			box-sizing: border-box;
-		}
-	</style>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>VisitHeart</title>
-</head>
-<body>
-	<div>Hello World!</div>
-</body>
-<script></script>
+    <head>
+        <style>
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: "Public Sans";
+        }
+
+        main {
+            background-image: url("/painting.webp");
+            width: 100%;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-position-y: -70px;
+            background-color: rgb(0,0,0);
+            color:#fff;
+            background-position-x: -200px;
+        }
+
+        #hjvtr {
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            z-index: 1000;
+            background-color: transparent;
+        }
+        #eydtfjh {
+            width: 404px;
+            height: 310px;
+            position: fixed;
+            right: 1px;
+            top: 1px;
+            display: grid;
+            place-content: center;
+        }
+
+        #ghrtd {           
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            }
+
+        #htfhb {
+            font-size: 100px;
+        }
+
+        #tools{
+        padding:10px;
+        z-index: 63245;
+        display:grid;
+        gap:12px;
+        position: absolute;
+        top:40%; 
+        right:3px;             
+        }
+        
+        #tools *{
+        color:#333;
+        text-decoration: none;
+        }
+
+         #tools button{
+         width:150px;
+         cursor:pointer;
+         height:50px;
+         background-color: rgb(0,0,0);
+         border:solid 1px gray;
+         border-radius:3px;
+          }
+         #tools section{
+            text-align:center;
+         }
+          @media (max-width:1069px){
+            main {
+            background-position-x: -620px;
+            background-position-y: 50vh;
+        }
+          }
+     </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>VisitHeart</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <main>
+            <div id="hjvtr"></div>
+            <div id="eydtfjh">
+                <div id="kjjf"></div>
+                <div id="ghrtd">
+                    <span id="hour"></span>
+                    <span id="gvj">:</span>
+                    <span id="minute"></span>
+                    <span id="gvj">:</span>
+                    <span id="seconds"></span>
+                </div>
+                <div id="htfhb">
+                </div>
+                <div id="fjykj">
+                    <p id="ydtih"></p>
+                </div>
+                <div>🐐</div>
+                <div>May you got blessed!</div>
+            </div>
+            <div id="tools">
+                <div>
+                    <button>Nutrition tracker Tool</button>
+                </div>
+                <div>
+                    <button>Pollution tracker Tool</button>
+                </div>
+                <div>
+                    <button>Body Mass Index</button>
+                </div>
+                <section>
+                    <div>------------------</div>
+                    <div>-----------</div>
+                </section>
+            </div>
+        </main>
+    </body>
+    <script>
+    const datEle=document.getElementById("kjjf"),yarEle=document.getElementById("ydtih"),hour=document.getElementById("hour"),minute=document.getElementById("minute"),htfhb=document.getElementById("htfhb"),seconds=document.getElementById("seconds");let dateObj=new Date(),dayNbr=dateObj.getDay()-1,weekDayEach=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],yearNbr=dateObj.getFullYear(),hourNbr=dateObj.getHours(),minuteNbr=dateObj.getMinutes(),amPm=dateObj.toLocaleTimeString(),secNbr=dateObj.getSeconds();datEle.innerHTML=weekDayEach[dayNbr];yarEle.innerHTML="All rights reserved "+yearNbr;hour.innerHTML=hourNbr;minute.innerHTML=dateObj.getMinutes();htfhb.innerHTML=amPm.slice(8);seconds.innerHTML=secNbr;setInterval(()=>{dateObj=new Date(),dayNbr=dateObj.getDay()-1,yearNbr=dateObj.getFullYear(),hourNbr=dateObj.getHours(),minuteNbr=dateObj.getMinutes(),amPm=dateObj.toLocaleTimeString(),secNbr=dateObj.getSeconds();datEle.innerHTML=weekDayEach[dayNbr];yarEle.innerHTML="All rights reserved "+yearNbr;hour.innerHTML=hourNbr;minute.innerHTML=dateObj.getMinutes();htfhb.innerHTML=amPm.slice(8);seconds.innerHTML=secNbr;},1000)
+
+    </script>
 </html>
