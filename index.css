@@ -1,0 +1,416 @@
+* {
+  font-family: "Fira Sans", serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: #ffffff;
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(250, 250, 250);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
+main {
+  background-image: url("/painting.webp");
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: -70px;
+  background-color: black;
+  background-position-x: -200px;
+  animation: linear 1s bg infinite;
+}
+
+#hjvtr {
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+
+#eydtfjh {
+  width: 404px;
+  height: 310px;
+  position: fixed;
+  right: 1px;
+  top: 1px;
+  display: grid;
+  place-content: center;
+}
+
+#eydtfjh em {
+  font-size: 13px;
+}
+
+#ghrtd {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#htfhb {
+  font-size: 89px;
+}
+
+#tools {
+  padding: 10px;
+  z-index: 63245;
+  display: grid;
+  gap: 1px;
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  height: 97px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin: 10px;
+  border-left: solid 1px rgb(19, 18, 18);
+}
+
+#tools:hover {
+  border-left: solid 1px #b10304;
+}
+
+#tools h1 {
+  color: #cccccc;
+  font-size: 18px;
+}
+
+#tools * {
+  text-decoration: none;
+}
+
+#tools strong {
+  width: 150px;
+  cursor: pointer;
+  height: 50px;
+}
+
+#tools .tool {
+  width: 100vw;
+  height: 97vh;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  z-index: 343;
+  padding: 3px;
+}
+
+#tools .tool .content {
+  background-color: black;
+  width: 97%;
+  margin: auto;
+  height: 94vh;
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#tools .tool .content form h1 {
+  padding: 1px 0px 8px 0px;
+}
+
+#tools .tool .content input {
+  color: #cfcfcf;
+  background-color: #181818;
+}
+
+#tools .tool .content button {
+  color: #cfcfcf;
+  background-color: #181818;
+  cursor: pointer;
+}
+
+#tools .tool #air_quality {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tools .tool #bmi {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tools .tool #bmi form #input_tag {
+  display: flex;
+  align-items: center;
+}
+
+#tools .tool #bmi form #btn_tag {
+  display: flex;
+  align-items: center;
+  gap: 183px;
+}
+
+#tools .tool #bmi form #input_tag #border_line {
+  width: 97px;
+  height: 1px;
+  background-color: rgb(36, 36, 36);
+}
+
+#tools .tool #bmi form #btn_tag {
+  padding: 50px 0px 50px 0px;
+}
+
+#tools .tool #bmi form #btn_tag button {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  cursor: default;
+}
+
+#tools .tool #bmi form #input_tag input {
+  width: 120px;
+}
+
+#tools .tool #bmi #section_content .bmi {
+  padding: 10px;
+  display: grid;
+  background-color: #080808;
+  place-content: center;
+  place-items: center;
+}
+
+#tools .tool #bmi #section_content .bmi #bmi_span {
+  font-size: 97px;
+}
+
+#tools .tool #bmi #section_content #desc {
+  padding: 10px;
+}
+
+#tools .tool #pollution {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tools .tool h1 {
+  color: rgb(34, 32, 32);
+}
+
+#tools .tool form {
+  flex: 1;
+  padding: 12px;
+  background-color: rgb(10, 10, 10);
+}
+
+#tools .tool form button {
+  padding: 10px;
+  border-radius: 3px;
+  border: solid 1px gray;
+}
+
+#tools .tool form input {
+  padding: 10px;
+  border-radius: 3px;
+  border: solid 1px gray;
+}
+
+#tools .tool form div {
+  padding: 8px 0px 0px 0px;
+  font-size: 10pt;
+  color: #585858;
+}
+
+#tools .tool section {
+  flex: 1;
+  display: grid;
+}
+
+#tools .tool #air_quality section #aqi {
+  display: grid;
+  place-content: center;
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+#tools .tool #air_quality #max_api {
+  font-size: 10pt;
+  position: relative;
+  top: -10px;
+}
+
+#tools .tool #air_quality section #desc h2 p {
+  font-size: 10pt;
+}
+
+.tool #pollution section {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.tool #pollution #data {
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tool #pollution #data #pollutant_pollution {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 21px;
+}
+
+.tool #pollution #data #pollutant_pollution li {
+  list-style: none;
+}
+
+.tool #pollution #data #pollutant_pollution li b {
+  border-bottom: solid 1px white;
+}
+
+#tools .tool #air_quality section #desc p {
+  font-size: 12px;
+}
+
+#tools_btn {
+  position: relative;
+  z-index: 63249;
+  border-right: solid 1px #c1bbbb;
+  border-bottom: solid 1px #c1bbbb;
+  padding: 3px;
+  cursor: pointer;
+  opacity: 0;
+  font-size: 10px;
+  width: min-content;
+}
+
+#search_query {
+  opacity: 0;
+  width: 1px;
+  display: none;
+}
+
+#source {
+  padding: 24px;
+  font-size: 11px;
+  display: none;
+  flex-direction: column;
+}
+
+#source a {
+  color: rgb(170, 170, 170);
+}
+
+#attribute {
+  font-size: 8px;
+  position: fixed;
+  bottom: 1px;
+  z-index: 118765400;
+  display: flex;
+  gap: 10px;
+  padding: 3px;
+}
+
+#attribute * {
+  color: #c9c6c6;
+}
+
+#about_toggle {
+  cursor: pointer;
+}
+
+#about {
+  position: absolute;
+  top: 0px;
+  z-index: 20000000000;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  padding: 3% 15% 3% 15%;
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+  color: rgb(247, 239, 239);
+}
+
+#about h1 {
+  text-align: left;
+}
+
+#about #vh {
+  font-size: 10px;
+  text-align: right;
+}
+
+#about #close_component {
+  width: max-content;
+  color: #000000;
+  height: 100pt;
+  width: 100pt;
+}
+
+#tcythb {
+  font-size: 8pt;
+}
+
+#chemica {
+  font-size: 19px;
+}
+
+#chemica:after {
+  content: "";
+  animation: linear 3s taahnumbtv infinite;
+}
+
+@keyframes taahnumbtv {
+  0% {
+    content: "🧪";
+  }
+
+  97% {
+    content: "";
+  }
+}
+
+@media (max-width: 1069px) {
+  main {
+    background-position-x: -620px;
+    background-position-y: 50vh;
+  }
+
+  #tools .tool #pollution {
+    flex-direction: column;
+  }
+
+  #tools .tool #pollution section {
+    flex: 10;
+  }
+
+  #tools .tool #air_quality {
+    flex-direction: column;
+  }
+
+  #tools .tool #air_quality section {
+    flex: 10;
+  }
+
+  #tools .tool #bmi {
+    flex-direction: column;
+  }
+}
