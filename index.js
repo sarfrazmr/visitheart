@@ -151,7 +151,7 @@ function tool(str) {
                    <div class="content" id="air_quality">
                     <form id="form">
                      <h1>Your Air Quality</h1>
-                     <input id="formInput" required  placeholder="Enter city"
+                     <input id="formInput" required  placeholder="Your city"
 type="text"/>
                      <button id="formBtn">Air Quality</button>
                      <div id="formResult">&nbsp;</div>
@@ -219,7 +219,7 @@ id="air_quality_index"></p></h2>
                    <div class="content" id="pollution">
                     <form id="form">
                         <h1>Your pollution</h1>
-                        <input id="formInput" required placeholder="Enter city"
+                        <input id="formInput" required placeholder="Your city"
 type="text"/>
                         <button id="formBtn">Pollution</button>
                         <div id="formResult">&nbsp;</div>
