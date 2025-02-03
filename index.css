@@ -28,15 +28,9 @@
 }
 
 main {
-  background-image: url("painting.webp");
   width: 100%;
   min-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-position-y: -70px;
   background-color: black;
-  background-position-x: -200px;
-  animation: linear 1s bg infinite;
 }
 
 #hjvtr {
