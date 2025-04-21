@@ -41,6 +41,7 @@ main {
   height: 100px;
   background-color: rgb(0, 0, 0);
   position: absolute;
+  left: 13%;
   top: 13%;
 }
 
@@ -397,11 +398,6 @@ main {
 }
 
 @media (max-width: 1069px) {
-  .click {
-    right: 50%;
-    top: 13%;
-  }
-
   main {
     background-position-x: -620px;
     background-position-y: 50vh;
@@ -425,19 +421,5 @@ main {
 
   #tools .tool #bmi {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 1500px) {
-  .click {
-    right: 70%;
-    top: 13%;
-  }
-}
-
-@media (max-width: 800px) {
-  .click {
-    right: 80%;
-    top: 70%;
   }
 }
