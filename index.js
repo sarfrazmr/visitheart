@@ -9,7 +9,7 @@ const pinIt = {
     htfhb = document.getElementById("htfhb"),
     seconds = document.getElementById("seconds"),
     tcythb = document.getElementById("tcythb"),
-    chemiCal = "... "
+    chemiCal = ". "
 
 let dateObj = new Date(),
     dayNbr = dateObj.getDay() - 1,
